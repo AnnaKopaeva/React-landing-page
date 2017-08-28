@@ -9,7 +9,7 @@ const Nav = [
   {name: 'Works', active: false},
   {name: 'Team', active: false},
   {name: 'Contact', active: false},
-]
+];
 
 class Header extends React.Component {
   render() {
@@ -17,9 +17,9 @@ class Header extends React.Component {
       <div className="header-wrapper">
         <div className="header">
           <div className="about-header">
-            <div className="header-logo">
+            <h3 className="header-logo">
               sarajevo <span>.</span>
-            </div>
+            </h3>
             <div className="header-present">
               I’am your tag line
             </div>

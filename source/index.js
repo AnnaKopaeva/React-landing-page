@@ -7,6 +7,9 @@ import Presentation from './component/presentation';
 import WrapperWorks from './component/works';
 import WrapperTeam from './component/team';
 import WrapperFacts from './component/facts';
+import WrapperContacts from './component/contacts';
+import GoogleApiWrapper from './component/map';
+import WrapperFooter from './component/footer';
 
 import 'normalize.css'
 import 'reset.css'
@@ -20,5 +23,8 @@ render((
     <WrapperWorks />
     <WrapperTeam />
     <WrapperFacts />
+    <WrapperContacts />
+    <GoogleApiWrapper />
+    <WrapperFooter />
   </div>
 ), document.getElementById('root'));

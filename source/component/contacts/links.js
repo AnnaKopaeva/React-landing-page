@@ -5,8 +5,8 @@ import './contacts.sass'
 class Links extends React.Component {
   render() {
     const ListItem = this.props.data.map((item, key) => 
-      <li>{item.imgSrc}</li>
-    )
+      <li key={key}><img src={item.imgSrc} /></li>
+    );
     return(
       <ul className="wrapper-links">
         {ListItem}

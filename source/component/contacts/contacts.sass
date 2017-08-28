@@ -1,0 +1,94 @@
+@import '../const.sass'
+
+.contacts-context
+  width: 974px
+
+.description-contacts
+  font-family: $fontLato
+  font-weight: 100
+  font-size: 18px
+  color: $dark-color
+  opacity: 0.8
+  margin-top: 54px
+  text-align: center
+
+.info-wrapper
+  margin-top: 80px
+  margin-bottom: 90px
+  display: flex
+  justify-content: space-between
+  font-family: $fontOpenSans
+
+  .wrapper-adress
+    h4
+      font-size: 18px
+      line-height: 27px
+      color: $dark-color
+    span
+      font-size: 11px
+      line-height: 20px
+      color: $light-grey-color
+      margin-top: 35px
+      display: block
+
+  .wrapper-form
+    h2
+      font-weight: 700
+      color: $dark-color
+      font-size: 20px
+  form
+    margin-top: 30px
+    padding: 10px
+    box-sizing: border-box
+    text-align: right
+    input
+      border: none
+      border-bottom: 2px solid $grey-border
+      color: $form-color
+      padding: 17px 0
+      outline: none
+      &::placeholder
+        font-size: 11px
+        color: $form-color
+    .name, .email
+      width: calc(50% - 12px)
+      display: inline-block
+    .name
+      margin-right: 24px
+    .message
+      width: 100%
+      margin-top: 22px
+    button
+      background-color: transparent
+      border: none
+      margin-top: 15px
+      padding: 15px
+      font-size: 13px
+      color: #000
+      display: inline-flex
+      justify-content: space-between
+      align-items: center
+      border-radius: 4px
+      position: relative
+      cursor: pointer
+      transition: background-color, color 0.5s ease-out
+      &:hover
+        background-color: $blue-color
+        color: white
+        img
+          filter: brightness(0) invert(1)
+      img
+        margin-right: 10px
+        transition: filter 0.5s ease-out
+
+.wrapper-links
+  padding-left: 30px
+  li
+    display: block
+    text-align: center
+    opacity: 0.2
+    transition: opacity 1s ease-out
+    margin-top: 15px
+    cursor: pointer
+    &:hover
+      opacity: 1
