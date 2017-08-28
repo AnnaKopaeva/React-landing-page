@@ -1,0 +1,97 @@
+@import '../const.sass'
+
+.works-wrapper
+  .works
+    width: 974px
+    font-family: $fontLato
+    margin: auto
+
+.description
+  padding-top: 45px
+  font-size: 14px
+  line-height: 18px
+  color: $dark-color
+  max-width: 710px
+  text-align: center
+  margin: auto
+
+.works-nav
+  margin-top: 72px
+  text-align: center
+
+  .menu-works-item
+    display: inline-block
+    font-weight: 900
+    font-size: 14px
+    color: $dark-color
+    margin-right: 50px
+    cursor: pointer
+    &:last-child
+      margin-right: 0px
+
+  .active-works-item
+    color: white
+    background-color: $blue-color
+    padding: 10px 20px
+    border-radius: 4px
+
+.works-gallery
+  width: 100%
+  margin-top: 78px
+  font-size: 0
+
+.block-works
+  width: calc(100% / 4)
+  box-sizing: border-box
+  display: inline-block
+  height: 222px
+  font-family: $fontOpenSans
+  position: relative
+  cursor: pointer
+  &:hover
+    .hover-block
+      display: flex
+      background-color: $blue-color
+    .image-wrapper
+      width: 27px
+      height: 27px
+      border-radius: 50%
+      border: 1px solid white
+      display: flex
+      flex-flow: row wrap
+      justify-content: center
+      align-items: center
+      margin-bottom: 20px
+
+    h3
+      font-weight: 700
+      font-size: 13px
+      line-height: 18px
+      width: 100%
+      margin-bottom: 10px
+    span
+      font-size: 11px
+      width: 100%
+
+  .image-works
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.hover-block
+  display: none
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 5
+  background-color: transparent
+  opacity: 0.9
+  justify-content: center
+  align-content: center
+  flex-flow: row wrap
+  color: white
+  text-align: center
+  transition: background-color 0.5s ease-out
+

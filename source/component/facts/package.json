@@ -1,0 +1,6 @@
+{
+  "name": "facts",
+  "version": "1.0.0",
+  "main": "./facts.js",
+  "license": "MIT"
+}

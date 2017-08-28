@@ -1,0 +1,45 @@
+@import '../const.sass'
+
+.main-wrapper
+  width: 100%
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+
+.about-wrapper
+  font-family: $fontLato
+  background-color: $background-color
+  .wrapper-blocks-about
+    display: flex
+    justify-content: space-between
+    margin-top: 82px
+    margin-bottom: 118px
+
+    .block-about
+      .logo-about
+        border-radius: 50%
+        border: 1px solid $blue-color
+      .text-about
+        color: $dark-color
+        margin-left: 15px
+        h3
+          font-weight: 600
+          font-size: 17px
+        p
+          line-height: 18px
+          opacity: 0.7
+          max-width: 265px
+
+.about
+  width: 974px
+  margin: auto
+
+.title
+    padding-top: 80px
+    color: $blue-color
+    font-weight: 900
+    font-size: 28px
+    letter-spacing: -0.02em
+    text-transform: uppercase
+    text-align: center

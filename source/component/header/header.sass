@@ -1,0 +1,58 @@
+@import '../const.sass'
+
+.header-wrapper
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: rgba(0,0,0,0.2)
+  height: 52px
+  position: relative
+  font-family: $fontLato
+
+.header
+  background-color: transparent
+  display: flex
+  justify-content: space-between
+  width: 974px
+  height: 52px
+
+.about-header
+  line-height: 52px
+  .header-logo
+    font-weight: 900
+    font-size: 21px
+    color: #fff
+    letter-spacing: 0.005em
+    display: inline-block
+    span
+      color: $blue-color
+  .header-present
+    font-weight: 100
+    font-style: italic
+    font-size: 14px
+    color: white
+    letter-spacing: 0.005em
+    padding-left: 20px
+    display: inline-block
+    margin-left: 32px
+    opacity: 0.3
+    line-height: initial
+    border-left: 1px solid #32b0ee
+
+.header-nav
+  box-sizing: border-box
+  line-height: 52px
+  .menu-item
+    display: inline-block
+    list-style: none
+    border-top: 1px solid transparent
+    font-weight: 100
+    font-size: 12px
+    color: white
+    letter-spacing: 0.005em
+    margin-right: 32px
+    cursor: pointer
+  .active
+    border-top: 1px solid $blue-color
+

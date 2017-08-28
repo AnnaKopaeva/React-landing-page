@@ -1,0 +1,57 @@
+@import '../const.sass'
+
+.banner-wrapper
+  background-image: url(images/banner.png)
+  height: 700px
+  margin-top: -52px
+
+.banner-context
+  width: 642px
+  margin: auto
+  text-align: center
+  padding-top: 292px
+  font-family: $fontLato
+  h1
+    font-weight: 900
+    font-size: 62px
+    color: #fff
+    span
+      color: $blue-color
+  h2
+    font-weight: 100
+    font-size: 48px
+    color: #fff
+    margin-top: 20px
+    span
+      color: $main-color
+  h3
+    font-weight: 100
+    font-size: 18px
+    color: #fff
+    margin-top: 34px
+    span
+      position: relative
+      &:before, &:after
+        content: ''
+        width: 28px
+        height: 1px
+        background-color: $blue-color
+        position: absolute
+        top: 11px
+      &:before
+        left: -40px
+      &:after
+        right: -40px
+  .icons
+    margin-top: 110px
+    img
+      cursor: pointer
+      opacity: 0.3
+      transition: opacity 0.5s ease-out
+      margin-right: 16px
+      &:hover
+        opacity: 1
+      &:last-child
+        margin-right: 0
+
+

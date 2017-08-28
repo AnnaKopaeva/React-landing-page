@@ -1,0 +1,59 @@
+@import '../const.sass'
+
+.presentation-wrapper
+  font-family: $fontOpenSans
+
+.presentation
+  width: 974px
+  margin: auto
+  position: relative
+
+  .presentation-title
+    padding-top: 85px
+    font-size: 15px
+    line-height: 30px
+    color: $font-color
+    min-width: 800px
+    text-align: center
+
+  .wrapper-blocks-about
+    margin-top: 62px
+    margin-bottom: 145px
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+  .block-about
+    display: block
+    margin-top: 54px
+    min-width: 300px
+    background-color: transparent
+    cursor: pointer
+    padding: 14px
+    transition: background-color 0.5s ease-out
+
+    &:hover
+      background-color: $hover-block
+      .logo-about
+        opacity: 1
+
+    .logo-about
+      opacity: 0.4
+      transition: opacity 0.5s ease-out
+    .text-about
+      color: $font-color
+      margin:
+        left: 40px
+      h3
+        font:
+          weight: 700
+          size: 13px
+      p
+        line-height: 20px
+        max-width: 215px
+
+  .phone
+    position: absolute
+    top: 200px
+    left: 311px
+
