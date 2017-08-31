@@ -11,7 +11,7 @@ import Man4 from './images/man4.png'
 export class Team extends React.Component {
   render() {
     return(
-      <div className="main-wrapper team-wrapper">
+      <div className="main-wrapper team-wrapper" id="containerTeam">
         <div className="team">
           <h2 className="title">Meet Our Team</h2>
           <Mark />

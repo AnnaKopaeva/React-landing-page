@@ -10,8 +10,8 @@ import Megaphone from './image/megaphone.png'
 export class Features extends React.Component {
   render() {
     return(
-      <div className="main-wrapper about-wrapper">
-        <div className="about">
+      <div className="main-wrapper about-wrapper" id="containerFeatures">
+        <div className="about" name="features">
           <h2 className="title">Features</h2>
           <Mark />
           <Block data={this.props.data}/>

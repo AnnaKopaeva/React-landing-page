@@ -1,20 +1,24 @@
 import React from 'react'
 import './header.sass'
 import 'normalize.css'
-import cx from "classnames"
+import cx from "classnames";
+
 
 class Navigation extends React.Component {
   render() {
-    const ListItem = this.props.data.map((item, key) =>
-      <li 
+    var { onClick, active } = this.props;
+    console.log(this.props.data.Nav.id)
+    const ListItem = this.props.data.Nav.map((item, key) =>
+      <li
         key={key}
-        className={cx('menu-item', {"active": item.active})}>
+        className={cx('menu-item', {"active": active == item.num})}
+        onClick={() => onClick(item.num, item.id)}>
         {item.name}
       </li>
     )
     return(
       <ul className="header-nav">
-        {ListItem}
+          {ListItem}
       </ul>
     )
   }

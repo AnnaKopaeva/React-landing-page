@@ -14,15 +14,23 @@ import Layer7 from './images/Layer7.png'
 import Layer8 from './images/Layer8.png'
 
 export class Works extends React.Component {
+  state = {
+      active: 1
+  }
+
+
   render() {
     return(
-      <div className="main-wrapper works-wrapper">
+      <div className="main-wrapper works-wrapper" id= "containerWorks">
         <div className="works">
           <h2 className="title">Works</h2>
           <Mark />
           <p className="description">{"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, \
           totam rem aperiam, eaque ipsa quae ab illo inventore"}</p>
-          <NavigationWorks data={this.props.data.menuItems}/>
+          <NavigationWorks
+              data={this.props.data.menuItems}
+              active={this.props.active}
+              onClick={this.props.toggleActive}/>
         </div>
         <Galery data={this.props.data.galery} />
       </div>
@@ -32,22 +40,23 @@ export class Works extends React.Component {
 
 class WrapperWorks extends React.Component {
   state = {
+    active: 1,
     menuItems: [
       {
         name: 'All',
-        active: true,
+        num: 1
       },{
         name: 'Branding',
-        active: false,
+        num: 2
       }, {
         name: 'Web',
-        active: false,
+        num: 3
       }, {
         name: 'Logo Design',
-        active: false,
+        num: 4
       }, {
         name: 'Photography',
-        active: false,
+        num: 5
       }
     ],
     galery: [
@@ -87,8 +96,15 @@ class WrapperWorks extends React.Component {
     ]
   }
 
+  toggleActive = (active) => {
+      this.setState({active})
+  }
+
   render() {
-    return <Works data={this.state} />
+    return <Works
+        data={this.state}
+        active={this.state.active}
+        toggleActive={this.toggleActive}/>
   }
 }
 

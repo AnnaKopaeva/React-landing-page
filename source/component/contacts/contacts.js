@@ -15,7 +15,7 @@ import Google from './images/google.png'
 export class Contacts extends React.Component {
   render() {
     return(
-      <div className="main-wrapper contacts-wrapper">
+      <div className="main-wrapper contacts-wrapper" id="containerContacts">
         <div className="contacts-context">
           <h2 className="title">Let’s Discuss</h2>
           <Mark />
