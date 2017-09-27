@@ -74,12 +74,12 @@ module.exports = function(env) {
 				},
 				plugins: [
 					new ExtractTextPlugin('./css/[name].css'),
-					new webpack.optimize.UglifyJsPlugin({
-						sourceMap: true,
-						compress: {
-							warnings: false
-						}
-					})
+					// new webpack.optimize.UglifyJsPlugin({
+					// 	sourceMap: true,
+					// 	compress: {
+					// 		warnings: false
+					// 	}
+					// })
 				]
 			}
 		])
