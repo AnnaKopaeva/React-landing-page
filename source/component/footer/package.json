@@ -1,0 +1,6 @@
+{
+  "name": "footer",
+  "version": "1.0.0",
+  "main": "./footer.js",
+  "license": "MIT"
+}
