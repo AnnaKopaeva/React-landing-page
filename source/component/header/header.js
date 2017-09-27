@@ -3,17 +3,42 @@ import Navigation from './header-nav.js'
 import './header.sass'
 import 'normalize.css'
 import TweenLite from 'gsap';
-import scrollTo from '../../../node_modules/gsap/ScrollToPlugin';
 
 class Header extends React.Component {
   state = {
       active: 1,
-      Nav : [
-          {name: 'Home', num: 1, id: 'containerHeader'},
-          {name: 'Features', num: 2, id: 'containerFeatures'},
-          {name: 'Works', num: 3, id: 'containerWorks'},
-          {name: 'Team', num: 4, id: 'containerTeam'},
-          {name: 'Contact', num: 5, id: 'containerContacts'},
+      nav : [
+          {
+              name: 'Home',
+              num: 1,
+              id: 'containerHeader',
+              routeId: '/'
+          },{
+              name: 'Features',
+              num: 2,
+              id: 'containerFeatures',
+              routeId: '/'
+          },{
+              name: 'Works',
+              num: 3,
+              id: 'containerWorks',
+              routeId: '/'
+          },{
+              name: 'Team',
+              num: 4,
+              id: 'containerTeam',
+              routeId: '/'
+          },{
+              name: 'Contact',
+              num: 5,
+              id: 'containerContacts',
+              routeId: '/'
+          },{
+              name: 'Blog',
+              num: 6,
+              id: 'containerHeader',
+              routeId: '/blog'
+          }
       ]
   }
   toggleActive = (active, id) => {
@@ -21,7 +46,7 @@ class Header extends React.Component {
       TweenLite.to(window, .8, {scrollTo: `#${id}`});
   }
   render() {
-    var { active, Nav } = this.state;
+    var { active } = this.state;
     return(
       <div className="header-wrapper" id="containerHeader">
         <div className="header">

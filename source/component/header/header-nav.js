@@ -2,18 +2,24 @@ import React from 'react'
 import './header.sass'
 import 'normalize.css'
 import cx from "classnames";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
 
 class Navigation extends React.Component {
   render() {
     var { onClick, active } = this.props;
-    console.log(this.props.data.Nav.id)
-    const ListItem = this.props.data.Nav.map((item, key) =>
+    console.log(this.props.data);
+    var data = {nav:[]};
+    const ListItem = this.props.data.nav.map((item, key) =>
       <li
         key={key}
         className={cx('menu-item', {"active": active == item.num})}
         onClick={() => onClick(item.num, item.id)}>
-        {item.name}
+        <Link to={`${item.routeId}`}>{item.name}</Link>
       </li>
     )
     return(
@@ -22,6 +28,12 @@ class Navigation extends React.Component {
       </ul>
     )
   }
+}
+
+Navigation.defaultProps = {
+    data: {
+        nav: [],
+    }
 }
 
 export default Navigation;
