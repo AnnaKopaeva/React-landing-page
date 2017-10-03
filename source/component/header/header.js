@@ -12,32 +12,22 @@ class Header extends React.Component {
               name: 'Home',
               num: 1,
               id: 'containerHeader',
-              routeId: '/'
           },{
               name: 'Features',
               num: 2,
               id: 'containerFeatures',
-              routeId: '/'
           },{
               name: 'Works',
               num: 3,
               id: 'containerWorks',
-              routeId: '/'
           },{
               name: 'Team',
               num: 4,
               id: 'containerTeam',
-              routeId: '/'
           },{
               name: 'Contact',
               num: 5,
               id: 'containerContacts',
-              routeId: '/'
-          },{
-              name: 'Blog',
-              num: 6,
-              id: 'containerHeader',
-              routeId: '/blog'
           }
       ]
   }
@@ -59,9 +49,9 @@ class Header extends React.Component {
             </div>
           </div>
           <Navigation
-              data={this.state}
-              active={active}
-              onClick={this.toggleActive} />
+            data={this.state}
+            active={active}
+            onClick={this.toggleActive}/>
         </div>
       </div>
     )

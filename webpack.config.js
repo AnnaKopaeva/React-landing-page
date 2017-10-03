@@ -41,11 +41,12 @@ const common = {
 
 const developmentConfig = {
 	devServer: {
-		stats: 'errors-only',
-		inline: true,
-		port: 9000,
-		hot: true,
-		contentBase: './build'
+        stats: 'errors-only',
+        inline: true,
+        port: 9000,
+        hot: true,
+        contentBase: './build',
+        historyApiFallback: true
 	}
 };
 

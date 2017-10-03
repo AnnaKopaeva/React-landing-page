@@ -6,7 +6,7 @@
   justify-content: center
   align-items: center
   background-color: rgba(0,0,0,0.2)
-  height: 54px
+  height: 52px
   position: relative
   font-family: $fontLato
 
@@ -27,18 +27,19 @@
   display: inline-block
   span
     color: $blue-color
-  .header-present
-    font-weight: 100
-    font-style: italic
-    font-size: 14px
-    color: white
-    letter-spacing: 0.005em
-    padding-left: 20px
-    display: inline-block
-    margin-left: 32px
-    opacity: 0.3
-    line-height: initial
-    border-left: 1px solid #32b0ee
+
+.header-present
+  font-weight: 100
+  font-style: italic
+  font-size: 14px
+  color: white
+  letter-spacing: 0.005em
+  padding-left: 20px
+  display: inline-block
+  margin-left: 32px
+  opacity: 0.3
+  line-height: initial
+  border-left: 1px solid #32b0ee
 
 .header-nav
   box-sizing: border-box
@@ -46,16 +47,19 @@
   .menu-item
     display: inline-block
     list-style: none
-    border-top: 1px solid transparent
     margin-right: 32px
     cursor: pointer
+    font-weight: 100
+    font-size: 12px
+    color: white
+    letter-spacing: 0.005em
+    line-height: 55px;
+    &:last-child
+      margin-right: 0
     a
       text-decoration: none
-      font-weight: 100
-      font-size: 12px
       color: white
-      letter-spacing: 0.005em
 
   .active
-    border-top: 1px solid $blue-color
+    box-shadow: inset 0 1px 0 #4c76ff
 

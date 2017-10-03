@@ -4,7 +4,7 @@ import './banner.sass'
 class Icons extends React.Component {
   render() {
     const ImageItems = this.props.data.map((imgSrc, key) =>
-      <img src={imgSrc} key={key}/>
+        <a href="#" key={key}><img src={imgSrc} /></a>
     )
     return(
       <div className="icons">

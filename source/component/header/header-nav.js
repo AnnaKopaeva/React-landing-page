@@ -19,12 +19,13 @@ class Navigation extends React.Component {
         key={key}
         className={cx('menu-item', {"active": active == item.num})}
         onClick={() => onClick(item.num, item.id)}>
-        <Link to={`${item.routeId}`}>{item.name}</Link>
+        {item.name}
       </li>
     )
     return(
       <ul className="header-nav">
           {ListItem}
+          <li className='menu-item' ><Link to="/blog">Blog</Link></li>
       </ul>
     )
   }

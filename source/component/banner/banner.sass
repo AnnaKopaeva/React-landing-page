@@ -42,16 +42,23 @@
         left: -40px
       &:after
         right: -40px
-  .icons
-    margin-top: 110px
-    img
-      cursor: pointer
-      opacity: 0.3
-      transition: opacity 0.5s ease-out
-      margin-right: 16px
-      &:hover
-        opacity: 1
-      &:last-child
-        margin-right: 0
 
+.icons
+  margin-top: 110px
+  a
+    cursor: pointer
+    opacity: 0.3
+    color: white
+    transition: opacity 0.5s ease-out
+    margin-right: 16px
+    &:hover
+      opacity: 1
+    &:last-child
+      margin-right: 0
+    &:nth-child(2)
+      img
+        filter: invert(0%)
+  img
+    filter: invert(100%)
+    height: 18px;
 

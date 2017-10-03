@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
 import Header from './component/header';
+import Blog from './component/blog/blog';
 import Banner from './component/banner';
 import Features from './component/about';
 import Presentation from './component/presentation';
@@ -12,14 +13,12 @@ import WrapperFacts from './component/facts';
 import WrapperContacts from './component/contacts';
 import GoogleApiWrapper from './component/map';
 import WrapperFooter from './component/footer';
-import ListItemBlog from './component/header/route.js'
 
 import 'normalize.css'
 import 'reset.css'
 
-render((
-    <BrowserRouter>
-      <div className="body">
+const MainComponent = () => (
+    <div className="body">
         <Header />
         <Banner />
         <Features />
@@ -30,7 +29,20 @@ render((
         <WrapperContacts />
         <GoogleApiWrapper />
         <WrapperFooter />
-        <Route path='/' component={ListItemBlog}/>
-      </div>
+    </div>
+)
+
+const RouteComponent = () => (
+    <main className="blog">
+        <Switch>
+            <Route exact path='/' component={MainComponent}/>
+            <Route exact path='/blog' component={Blog}/>
+        </Switch>
+    </main>
+)
+
+render((
+    <BrowserRouter>
+      <RouteComponent />
     </BrowserRouter>
 ), document.getElementById('root'));
