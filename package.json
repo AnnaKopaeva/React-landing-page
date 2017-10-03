@@ -13,7 +13,7 @@
     "font-awesome": "^4.7.0",
     "font-awesome.min.css": "^3.2.1",
     "normalize.css": "^7.0.0",
-    "react": "^15.6.1",
+    "react": "^16.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "reset.css": "^2.0.2",
