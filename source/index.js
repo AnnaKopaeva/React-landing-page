@@ -36,7 +36,7 @@ const RouteComponent = () => (
     <main className="blog">
         <Switch>
             <Route exact path='/' component={MainComponent}/>
-            <Route exact path='/blog' component={Blog}/>
+            <Route exact path='/React-landing-page/build/blog' component={Blog}/>
         </Switch>
     </main>
 )

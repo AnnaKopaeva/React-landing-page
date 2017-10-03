@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c3b25cc5a01f4323d9ee"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5db7cf89fa60e696e8b5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -23350,7 +23350,7 @@ var RouteComponent = function RouteComponent() {
             _reactRouterDom.Switch,
             null,
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: MainComponent }),
-            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/blog', component: _blog2.default })
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/React-landing-page/build/blog', component: _blog2.default })
         )
     );
 };
@@ -38754,7 +38754,7 @@ var Navigation = function (_React$Component) {
           { className: 'menu-item' },
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/blog' },
+            { to: '/React-landing-page/build/blog' },
             'Blog'
           )
         )
