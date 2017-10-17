@@ -25,7 +25,7 @@ class Navigation extends React.Component {
     return(
       <ul className="header-nav">
           {ListItem}
-          <li className='menu-item' ><Link to="/React-landing-page/build/blog">Blog</Link></li>
+          <li className='menu-item' ><Link to="/posts">Blog</Link></li>
       </ul>
     )
   }

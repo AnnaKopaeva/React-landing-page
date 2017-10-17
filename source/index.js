@@ -1,9 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import { Switch, Route , HashRouter } from 'react-router-dom'
 
 import Header from './component/header';
-import Blog from './component/blog/blog';
 import Banner from './component/banner';
 import Features from './component/about';
 import Presentation from './component/presentation';
@@ -13,6 +12,9 @@ import WrapperFacts from './component/facts';
 import WrapperContacts from './component/contacts';
 import GoogleApiWrapper from './component/map';
 import WrapperFooter from './component/footer';
+
+import PostPage from './component/blog/post_page';
+import Post from './component/blog/Post';
 
 import 'normalize.css'
 import 'reset.css'
@@ -36,13 +38,14 @@ const RouteComponent = () => (
     <main className="blog">
         <Switch>
             <Route exact path='/' component={MainComponent}/>
-            <Route exact path='/React-landing-page/build/blog' component={Blog}/>
+            <Route exact path='/posts' component={Post}/>
+            <Route path='/posts/:id' component={PostPage}/>
         </Switch>
     </main>
 )
 
 render((
-    <BrowserRouter>
+    <HashRouter>
       <RouteComponent />
-    </BrowserRouter>
+    </HashRouter>
 ), document.getElementById('root'));
