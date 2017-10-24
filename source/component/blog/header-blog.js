@@ -1,23 +1,20 @@
 import React from 'react';
 
 import Logo from './images/logo.png'
-import Behance from './images/behance.png'
-import Twitter from './images/twitter.png'
-import Dribbble from './images/dribbble.png'
-import Forrst from './images/forrst.png'
-import Google from './images/google.png'
+import Twitter from './images/wtwitter.png'
+import Dribbble from './images/wdribbble.png'
+import Facebook from './images/wfacebook.png'
+import Google from './images/wgoogle.png'
 
 class HeaderBlog extends React.Component {
     state = {
         iconsLink: [
             {
-                imgSrc: Behance
-            },{
                 imgSrc: Twitter
             }, {
                 imgSrc: Dribbble
             }, {
-                imgSrc: Forrst
+                imgSrc: Facebook
             }, {
                 imgSrc: Google
             }

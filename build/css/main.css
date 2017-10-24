@@ -562,10 +562,7 @@ template {
       opacity: 1; }
     .icons a:last-child {
       margin-right: 0; }
-    .icons a:nth-child(2) img {
-      filter: invert(0%); }
   .icons img {
-    filter: invert(100%);
     height: 18px; }
 .main-wrapper {
   width: 100%;

@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "059655750c9af411acf0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e408c8a4da93c670aba8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -23325,7 +23325,7 @@ var _Post2 = _interopRequireDefault(_Post);
 
 __webpack_require__(48);
 
-__webpack_require__(359);
+__webpack_require__(358);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38818,21 +38818,21 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(125);
 
-var _twitter = __webpack_require__(265);
+var _wtwitter = __webpack_require__(265);
 
-var _twitter2 = _interopRequireDefault(_twitter);
+var _wtwitter2 = _interopRequireDefault(_wtwitter);
 
-var _facebook = __webpack_require__(266);
+var _wfacebook = __webpack_require__(266);
 
-var _facebook2 = _interopRequireDefault(_facebook);
+var _wfacebook2 = _interopRequireDefault(_wfacebook);
 
-var _google = __webpack_require__(267);
+var _wgoogle = __webpack_require__(267);
 
-var _google2 = _interopRequireDefault(_google);
+var _wgoogle2 = _interopRequireDefault(_wgoogle);
 
-var _dribbble = __webpack_require__(268);
+var _wdribbble = __webpack_require__(268);
 
-var _dribbble2 = _interopRequireDefault(_dribbble);
+var _wdribbble2 = _interopRequireDefault(_wdribbble);
 
 var _Icons = __webpack_require__(269);
 
@@ -38846,7 +38846,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var icons = [_twitter2.default, _facebook2.default, _google2.default, _dribbble2.default];
+var icons = [_wtwitter2.default, _wfacebook2.default, _wgoogle2.default, _wdribbble2.default];
 
 var Banner = function (_React$Component) {
   _inherits(Banner, _React$Component);
@@ -38913,25 +38913,25 @@ exports.default = Banner;
 /* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/twitter.png";
+module.exports = __webpack_require__.p + "images/wtwitter.png";
 
 /***/ }),
 /* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/facebook.png";
+module.exports = __webpack_require__.p + "images/wfacebook.png";
 
 /***/ }),
 /* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/google.png";
+module.exports = __webpack_require__.p + "images/wgoogle.png";
 
 /***/ }),
 /* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dribbble.png";
+module.exports = __webpack_require__.p + "images/wdribbble.png";
 
 /***/ }),
 /* 269 */
@@ -43674,25 +43674,21 @@ var _logo = __webpack_require__(353);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _behance = __webpack_require__(354);
+var _wtwitter = __webpack_require__(354);
 
-var _behance2 = _interopRequireDefault(_behance);
+var _wtwitter2 = _interopRequireDefault(_wtwitter);
 
-var _twitter = __webpack_require__(355);
+var _wdribbble = __webpack_require__(355);
 
-var _twitter2 = _interopRequireDefault(_twitter);
+var _wdribbble2 = _interopRequireDefault(_wdribbble);
 
-var _dribbble = __webpack_require__(356);
+var _wfacebook = __webpack_require__(356);
 
-var _dribbble2 = _interopRequireDefault(_dribbble);
+var _wfacebook2 = _interopRequireDefault(_wfacebook);
 
-var _forrst = __webpack_require__(357);
+var _wgoogle = __webpack_require__(357);
 
-var _forrst2 = _interopRequireDefault(_forrst);
-
-var _google = __webpack_require__(358);
-
-var _google2 = _interopRequireDefault(_google);
+var _wgoogle2 = _interopRequireDefault(_wgoogle);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43718,15 +43714,13 @@ var HeaderBlog = function (_React$Component) {
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = HeaderBlog.__proto__ || Object.getPrototypeOf(HeaderBlog)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
             iconsLink: [{
-                imgSrc: _behance2.default
+                imgSrc: _wtwitter2.default
             }, {
-                imgSrc: _twitter2.default
+                imgSrc: _wdribbble2.default
             }, {
-                imgSrc: _dribbble2.default
+                imgSrc: _wfacebook2.default
             }, {
-                imgSrc: _forrst2.default
-            }, {
-                imgSrc: _google2.default
+                imgSrc: _wgoogle2.default
             }]
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
@@ -43780,34 +43774,28 @@ module.exports = __webpack_require__.p + "images/logo.png";
 /* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/behance.png";
+module.exports = __webpack_require__.p + "images/wtwitter.png";
 
 /***/ }),
 /* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/twitter.png";
+module.exports = __webpack_require__.p + "images/wdribbble.png";
 
 /***/ }),
 /* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dribbble.png";
+module.exports = __webpack_require__.p + "images/wfacebook.png";
 
 /***/ }),
 /* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/forrst.png";
+module.exports = __webpack_require__.p + "images/wgoogle.png";
 
 /***/ }),
 /* 358 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/google.png";
-
-/***/ }),
-/* 359 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

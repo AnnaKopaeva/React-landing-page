@@ -1,10 +1,10 @@
 import React from 'react'
 import './banner.sass'
 
-import Twitter from './images/twitter.png'
-import Facebook from './images/facebook.png'
-import Google from './images/google.png'
-import Dribbble from './images/dribbble.png'
+import Twitter from './images/wtwitter.png'
+import Facebook from './images/wfacebook.png'
+import Google from './images/wgoogle.png'
+import Dribbble from './images/wdribbble.png'
 import Icons from './Icons'
 
 const icons = [Twitter, Facebook, Google, Dribbble]
