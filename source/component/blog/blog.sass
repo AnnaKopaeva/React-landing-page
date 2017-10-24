@@ -1,0 +1,113 @@
+@import '../const.sass'
+
+.wrapper-header-blog
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #acd9cf
+  height: 52px
+  position: relative
+  font-family: $fontLato
+  .header-blog
+    background-color: transparent
+    display: flex
+    justify-content: space-between
+    width: 974px
+    height: 52px
+
+.header-blog__logo
+  width: 92px
+.header-blog__nav
+  box-sizing: border-box
+  line-height: 52px
+  .menu-item
+    display: inline-block
+    margin-right: 32px
+    opacity: 0.6
+    &:last-child
+      margin-right: 0
+    &:hover
+      opacity: 1
+
+.wrapper-main-posts
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: $fontOpenSans
+  .main-posts
+    width: 974px
+    .pagination
+      text-align: center
+      margin: 20px 0
+      li
+        display: inline-block
+        padding: 0 5px
+        a
+          color: $dark-color
+          text-decoration: none
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: transparent
+          i
+            color: $dark-color
+            transition: color 0.5s
+            &:hover, &:active
+              color: $blue-color
+      .active
+        a
+          color: white
+          font-weight: 700
+          background-color: $blue-color
+
+.main-posts__list
+  margin-top: 25px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  a
+    text-decoration: none
+
+.main-posts__item
+  max-width: 300px
+  padding: 10px
+  margin-bottom: 10px
+  border-radius: 5px
+  background-color: transparent
+  transition: background-color 0.5s
+  h4
+    font-weight: 700
+    font-size: 13px
+    color: $blue-color
+    transition: color 0.5s
+  .description
+    text-align: left
+    padding-top: 15px
+  &:hover
+    background-color: $blue-color
+    h4
+      color: white
+
+.wrapper-detail-post
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: $fontOpenSans
+.detail-post
+  width: 974px
+  padding-top: 50px
+  h4
+    font-weight: 700
+    font-size: 24px
+    color: $blue-color
+    transition: color 0.5s
+  .description
+    text-align: left
+    padding-top: 15px
+    max-width: none

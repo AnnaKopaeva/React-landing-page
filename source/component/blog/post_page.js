@@ -23,9 +23,11 @@ class PostPage extends React.Component {
     render(){
         const { dataset } = this.state;
         return(
-            <div>
-                <h3>{dataset.title}</h3>
-                <p>{dataset.body}</p>
+            <div className="wrapper-detail-post">
+                <div className="detail-post">
+                    <h4>{dataset.title}</h4>
+                    <p className="description">{dataset.body}</p>
+                </div>
             </div>
         )
     }

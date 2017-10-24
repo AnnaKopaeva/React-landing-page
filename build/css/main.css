@@ -1081,6 +1081,118 @@ div.map-wrapper {
   .scrollToTop img {
     width: 15px;
     height: 10px; }
+.wrapper-header-blog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #acd9cf;
+  height: 52px;
+  position: relative;
+  font-family: "Lato", sans-serif; }
+  .wrapper-header-blog .header-blog {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 974px;
+    height: 52px; }
+
+.header-blog__logo {
+  width: 92px; }
+
+.header-blog__nav {
+  box-sizing: border-box;
+  line-height: 52px; }
+  .header-blog__nav .menu-item {
+    display: inline-block;
+    margin-right: 32px;
+    opacity: 0.6; }
+    .header-blog__nav .menu-item:last-child {
+      margin-right: 0; }
+    .header-blog__nav .menu-item:hover {
+      opacity: 1; }
+
+.wrapper-main-posts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+  .wrapper-main-posts .main-posts {
+    width: 974px; }
+    .wrapper-main-posts .main-posts .pagination {
+      text-align: center;
+      margin: 20px 0; }
+      .wrapper-main-posts .main-posts .pagination li {
+        display: inline-block;
+        padding: 0 5px; }
+        .wrapper-main-posts .main-posts .pagination li a {
+          color: #062033;
+          text-decoration: none;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: transparent; }
+          .wrapper-main-posts .main-posts .pagination li a i {
+            color: #062033;
+            transition: color 0.5s; }
+            .wrapper-main-posts .main-posts .pagination li a i:hover, .wrapper-main-posts .main-posts .pagination li a i:active {
+              color: #4c76ff; }
+      .wrapper-main-posts .main-posts .pagination .active a {
+        color: white;
+        font-weight: 700;
+        background-color: #4c76ff; }
+
+.main-posts__list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .main-posts__list a {
+    text-decoration: none; }
+
+.main-posts__item {
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.5s; }
+  .main-posts__item h4 {
+    font-weight: 700;
+    font-size: 13px;
+    color: #4c76ff;
+    transition: color 0.5s; }
+  .main-posts__item .description {
+    text-align: left;
+    padding-top: 15px; }
+  .main-posts__item:hover {
+    background-color: #4c76ff; }
+    .main-posts__item:hover h4 {
+      color: white; }
+
+.wrapper-detail-post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+
+.detail-post {
+  width: 974px;
+  padding-top: 50px; }
+  .detail-post h4 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #4c76ff;
+    transition: color 0.5s; }
+  .detail-post .description {
+    text-align: left;
+    padding-top: 15px;
+    max-width: none; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
