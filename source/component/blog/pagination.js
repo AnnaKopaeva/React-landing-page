@@ -5,7 +5,7 @@ class Pagination extends React.Component {
 
     getNumberPage(){
         const {count, limit, active, maxLength} = this.props;
-        const numberPage = count / limit;
+        const numberPage = Math.ceil(count / limit);
         var arr = [active, ];
 
         for (let i=1; arr.length < maxLength; i++) {
@@ -24,7 +24,7 @@ class Pagination extends React.Component {
     render() {
         var getNumberPage = this.getNumberPage();
         var {count, limit, active, handlerClick} = this.props;
-        const numberPage = count / limit;
+        const numberPage = Math.ceil(count / limit);
         const before = (active - 1) < 1 ? 1 : active - 1;
         const next = (active + 1 >= numberPage) ? numberPage : active + 1;
 

@@ -20,7 +20,7 @@ class Post extends React.Component {
     }
 
     static defaultProps = {
-        limit: 10
+        limit: 9
     }
     getData = (dataset) => {
         this.setState({dataset});
@@ -40,7 +40,7 @@ class Post extends React.Component {
         active = Number(url.searchParams.get("pages")) || 1;
 
         const { limit } = this.props;
-        this.setState({active})
+        this.setState({active});
 
         fetch(`https://jsonplaceholder.typicode.com/posts?_page=${active}&_limit=${limit}`)
             .then((response) => {
@@ -48,6 +48,7 @@ class Post extends React.Component {
                 return response.json();
             })
             .then(this.getData)
+        console.log(active);
     }
 
 
