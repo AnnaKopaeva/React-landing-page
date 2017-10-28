@@ -12,7 +12,6 @@ import {
 class Navigation extends React.Component {
   render() {
     var { onClick, active } = this.props;
-    console.log(this.props.data);
     var data = {nav:[]};
     const ListItem = this.props.data.nav.map((item, key) =>
       <li

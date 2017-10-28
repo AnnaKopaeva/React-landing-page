@@ -1,4 +1,6 @@
 import React from 'react';
+import WrapperFooter from '../footer';
+import HeaderBlog from './header-blog';
 
 class PostPage extends React.Component {
     constructor(props) {
@@ -23,12 +25,17 @@ class PostPage extends React.Component {
     render(){
         const { dataset } = this.state;
         return(
-            <div className="wrapper-detail-post">
-                <div className="detail-post">
-                    <h4>{dataset.title}</h4>
-                    <p className="description">{dataset.body}</p>
+            <div>
+                <HeaderBlog />
+                <div className="wrapper-detail-post">
+                    <div className="detail-post">
+                        <h4>{dataset.title}</h4>
+                        <p className="description">{dataset.body}</p>
+                    </div>
                 </div>
+                <WrapperFooter />
             </div>
+
         )
     }
 }

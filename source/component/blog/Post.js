@@ -21,23 +21,37 @@ class Post extends React.Component {
 
     static defaultProps = {
         limit: 9
-    }
+    };
     getData = (dataset) => {
         this.setState({dataset});
-    }
+    };
 
     setCount = (count) => {
         this.setState({count});
-    }
+    };
 
     handlerClick = (active) => {
-        this.setState({active})
-    }
+        const { limit } = this.props;
+        this.setState({active});
+
+        fetch(`https://jsonplaceholder.typicode.com/posts?_page=${active}&_limit=${limit}`)
+            .then((response) => {
+                this.setCount(+response.headers.get('x-total-count'))
+                return response.json();
+            })
+            .then(this.getData);
+    };
 
     componentWillMount() {
         var active = location.toString();
-        var url = new URL(active);
-        active = Number(url.searchParams.get("pages")) || 1;
+        var reg = /\?pages=(\d*)(.*)/;
+        var a = active.match(reg)[1];
+        active = Number(a);
+
+
+        // var active = location.toString();
+        // var url = new URL(active);
+        // active = Number(url.searchParams.get("pages")) || 1;
 
         const { limit } = this.props;
         this.setState({active});
@@ -48,9 +62,7 @@ class Post extends React.Component {
                 return response.json();
             })
             .then(this.getData)
-        console.log(active);
     }
-
 
     render(){
         const {active, count} = this.state;
@@ -90,4 +102,3 @@ class Post extends React.Component {
 }
 
 export default Post;
-

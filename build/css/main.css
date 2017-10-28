@@ -1083,7 +1083,7 @@ div.map-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #acd9cf;
+  background-color: rgba(76, 118, 255, 0.6);
   height: 52px;
   position: relative;
   font-family: "Lato", sans-serif; }
@@ -1180,7 +1180,7 @@ div.map-wrapper {
 
 .detail-post {
   width: 974px;
-  padding-top: 50px; }
+  padding: 50px 0; }
   .detail-post h4 {
     font-weight: 700;
     font-size: 24px;
@@ -1190,6 +1190,9 @@ div.map-wrapper {
     text-align: left;
     padding-top: 15px;
     max-width: none; }
+
+.scrollToTop {
+  display: none; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
