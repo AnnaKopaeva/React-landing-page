@@ -33,6 +33,7 @@ class Post extends React.Component {
     handlerClick = (active) => {
         const { limit } = this.props;
         this.setState({active});
+        setTimeout(window.scrollTo(0, 0), 1000);
 
         fetch(`https://jsonplaceholder.typicode.com/posts?_page=${active}&_limit=${limit}`)
             .then((response) => {
@@ -45,8 +46,9 @@ class Post extends React.Component {
     componentWillMount() {
         var active = location.toString();
         var reg = /\?pages=(\d*)(.*)/;
-        var a = active.match(reg)[1];
-        active = Number(a);
+        var a = active.match(reg)
+        active =  a ? Number(a[1]): 1;
+        console.log(active)
 
 
         // var active = location.toString();
