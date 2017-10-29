@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "486ca62037a6783626c3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d1f9f328e37b7ff0bf4f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -43576,6 +43576,7 @@ var Post = function (_React$Component) {
             var limit = _this.props.limit;
 
             _this.setState({ active: active });
+            setTimeout(window.scrollTo(0, 0), 1000);
 
             fetch('https://jsonplaceholder.typicode.com/posts?_page=' + active + '&_limit=' + limit).then(function (response) {
                 _this.setCount(+response.headers.get('x-total-count'));
@@ -43598,12 +43599,9 @@ var Post = function (_React$Component) {
 
             var active = location.toString();
             var reg = /\?pages=(\d*)(.*)/;
-            var a = active.match(reg)[1];
-            active = Number(a);
-
-            // var active = location.toString();
-            // var url = new URL(active);
-            // active = Number(url.searchParams.get("pages")) || 1;
+            var a = active.match(reg);
+            active = a ? Number(a[1]) : 1;
+            console.log(active);
 
             var limit = this.props.limit;
 
