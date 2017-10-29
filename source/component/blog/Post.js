@@ -48,12 +48,7 @@ class Post extends React.Component {
         var reg = /\?pages=(\d*)(.*)/;
         var a = active.match(reg)
         active =  a ? Number(a[1]): 1;
-        console.log(active)
-
-
-        // var active = location.toString();
-        // var url = new URL(active);
-        // active = Number(url.searchParams.get("pages")) || 1;
+        console.log(active);
 
         const { limit } = this.props;
         this.setState({active});
