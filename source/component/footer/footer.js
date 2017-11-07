@@ -6,10 +6,8 @@ import Explore from './explore'
 import ScrollToTop from './scrollToTop'
 
 import TweenLite from 'gsap';
-import scrollTo from '../../../node_modules/gsap/ScrollToPlugin';
 
 import './footer.sass'
-import ArrowUp from './up-arrow.png'
 
 export class Footer extends React.Component {
     render() {

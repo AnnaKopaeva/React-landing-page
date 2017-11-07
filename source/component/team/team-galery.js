@@ -1,9 +1,9 @@
 import React from 'react'
 import './team.sass'
 
-import Twitter from './images/Twitter.png'
-import Facebook from './images/FB.png'
-import Google from './images/G+.png'
+import Twitter from './images/wtwitter.png'
+import Facebook from './images/wfacebook.png'
+import Google from './images/wgoogle.png'
 
 class GaleryTeam extends React.Component {
   render() {
