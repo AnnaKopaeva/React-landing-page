@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from './header-nav.js'
 import './header.sass'
 import 'normalize.css'
-import TweenLite from 'gsap';
+import scrollToElement from 'scroll-to-element'
 
 class Header extends React.Component {
   state = {
@@ -33,7 +33,11 @@ class Header extends React.Component {
   }
   toggleActive = (active, id) => {
       this.setState({active});
-      TweenLite.to(window, .8, {scrollTo: `#${id}`});
+      scrollToElement(`#${id}`, {
+          offset: 0,
+          ease: 'out-expo',
+          duration: 1500
+      });
   }
   render() {
     var { active } = this.state;

@@ -1,11 +1,10 @@
 import React from 'react'
+import scrollToElement from 'scroll-to-element'
 
 import Description from './description'
 import Subscribe from './subscribe'
 import Explore from './explore'
 import ScrollToTop from './scrollToTop'
-
-import TweenLite from 'gsap';
 
 import './footer.sass'
 
@@ -49,7 +48,7 @@ class WrapperFooter extends React.Component {
     }
 
     handlerClick = () => {
-        TweenLite.to(window, .8, {scrollTo: '#containerHeader'});
+        scrollToElement('#containerHeader');
     }
 
     render() {
